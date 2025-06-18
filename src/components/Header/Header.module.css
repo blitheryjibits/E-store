@@ -1,0 +1,40 @@
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.headerLogo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.headerNav {
+  /* No extra styles needed for nav itself */
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navList a:hover,
+.navList a:focus {
+  color: #0070f3;
+}
