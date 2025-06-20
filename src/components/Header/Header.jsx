@@ -14,13 +14,8 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products">
+              <NavLink to="Categories">
                 Products
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">
-                Contact
               </NavLink>
             </li>
             <li>
