@@ -15,7 +15,10 @@ import Categories from './components/Categories/Categories.jsx';
 // import loaders and actions
 import CategoryPage, { loader as categoryPageLoader } from './components/Category/CategoryPage.jsx';
 
-// Create router adn paths.
+// import context
+import { CartProvider } from './context/CartContext.jsx';
+
+// Create router and paths.
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,12 +31,10 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <Landing />,
-            // loader: landingLoader
           },
           {
             path: "Categories",
             element: <Categories />,
-            // loader: categoriesLoader
           },
           {
             path: "Categories/:category",
@@ -49,6 +50,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 )
