@@ -9,11 +9,11 @@ import {
 // Imported pages for the router.
 import Root from './routes/root';
 import ErrorPage from './components/Error/Error-page.jsx';
-import Landing from './components/Landing/Landing.jsx';
-import Categories from './components/Categories/Categories.jsx';
+import Landing from './routes/Landing.jsx';
+import Categories from './routes/Categories.jsx';
 
 // import loaders and actions
-import CategoryPage, { loader as categoryPageLoader } from './components/Category/CategoryPage.jsx';
+import CategoryPage, { loader as categoryPageLoader } from './routes/CategoryPage.jsx';
 
 // import context
 import { CartProvider } from './context/CartContext.jsx';
