@@ -39,9 +39,12 @@ export default function Header() {
                   <circle cx="20" cy="21" r="1" />
                   <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6" />
                 </svg>
-                    <span className="absolute -top-4 -right-4 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-0.5">
-                      {cartCount}
-                    </span>
+                    {
+                      cartCount > 0 &&
+                      <span className="absolute -top-4 -right-4 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-0.5">
+                        {cartCount}
+                      </span>
+                    }
               </NavLink>
             </li>
           </ul>
