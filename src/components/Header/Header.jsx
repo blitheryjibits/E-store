@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <header className={`${styles.appHeader} sticky top-0 z-50`}>
-        <div className={styles.headerLogo}>Shop Name</div>
+        <div className={styles.headerLogo}>PixelCart</div>
         <nav className={styles.headerNav}>
           <ul className={styles.navList}>
             <li>
