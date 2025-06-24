@@ -11,6 +11,7 @@ import Root from './routes/root';
 import ErrorPage from './components/Error/Error-page.jsx';
 import Landing from './routes/Landing.jsx';
 import Categories from './routes/Categories.jsx';
+import Cart from './routes/Cart.jsx';
 
 // import loaders and actions
 import CategoryPage, { loader as categoryPageLoader } from './routes/CategoryPage.jsx';
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             path: "Categories/:category",
             element: <CategoryPage />,
             loader: categoryPageLoader
+          },
+          {
+            path: "Cart",
+            element: <Cart />
           }
 
         ]
