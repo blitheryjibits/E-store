@@ -14,13 +14,8 @@ export default function Categories() {
 
   return (
     <div className="categories">
-      <h1>Categories</h1>
-      <div style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        gap: '1rem'
-      }}>
+      <h1 className="text-3xl font-bold mb-6 pl-4 pt-2">Categories</h1>
+      <div className="flex flex-wrap justify-center gap-4">
         {categories.map(category => (
             <Link key={category} to={`/Categories/${category}`}>
                 <CategoryCard category={category} />

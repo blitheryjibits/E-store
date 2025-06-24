@@ -19,8 +19,8 @@ export default function CategoryPage() {
 
     return (
         <div>
-            <h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
-            <div className="flex flex-wrap justify-center gap-4 p-4 bg-[#f9f9f9] rounded-lg shadow-md">
+            <h1 className="text-3xl font-bold mb-6 pl-4 pt-2" >{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+            <div className="flex flex-wrap justify-center gap-4 p-4 ">
             {products.map(product => (
                 <ProductCard key={product.id} product={product} />
             ))}
